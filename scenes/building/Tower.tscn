@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dt7g8tw8epbv1" path="res://assets/buildings/tower_blue.png" id="1_a1tb5"]
 [ext_resource type="PackedScene" uid="uid://gaufabbjupap" path="res://scenes/components/BuildingComponent.tscn" id="1_x0yyd"]
 
-[node name="Building" type="Node2D"]
+[node name="Tower" type="Node2D"]
 y_sort_enabled = true
 
 [node name="BuildingComponent" parent="." instance=ExtResource("1_x0yyd")]
