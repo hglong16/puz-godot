@@ -1,11 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://bmqctl6470gke"]
 
-[ext_resource type="Texture2D" uid="uid://dt7g8tw8epbv1" path="res://assets/buildings/tower_blue.png" id="1_fo3y5"]
+[ext_resource type="Script" path="res://scenes/building/BuildingGhost.cs" id="1_yccbl"]
 
 [node name="BuildingGhost" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(32, 32)
-texture = ExtResource("1_fo3y5")
-centered = false
-offset = Vector2(-64, -204)
+y_sort_enabled = true
+script = ExtResource("1_yccbl")

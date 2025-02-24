@@ -17,6 +17,7 @@ script = ExtResource("1_a3ro1")
 gridManager = NodePath("../GridManager")
 gameUI = NodePath("../GameUI")
 ySortRoot = NodePath("../YSortRoot")
+buildingGhostScene = ExtResource("8_1ncl1")
 
 [node name="GridManager" parent="." node_paths=PackedStringArray("highlightTilemapLayer", "baseTerrainTilemapLayer") instance=ExtResource("2_hdfgf")]
 highlightTilemapLayer = NodePath("../HighlightTileMapLayer")
@@ -38,6 +39,8 @@ tile_set = ExtResource("3_j8if8")
 [node name="Base" parent="YSortRoot" instance=ExtResource("5_q42wm")]
 position = Vector2(448, 320)
 
+[node name="BuildingGhost" parent="YSortRoot" instance=ExtResource("8_1ncl1")]
+
 [node name="Village" parent="YSortRoot" instance=ExtResource("5_f3xq2")]
 position = Vector2(64, 704)
 
@@ -46,5 +49,3 @@ modulate = Color(1, 1, 1, 0.427451)
 tile_set = ExtResource("2_ivl3o")
 
 [node name="GameUI" parent="." instance=ExtResource("7_n17uu")]
-
-[node name="BuildingGhost" parent="." instance=ExtResource("8_1ncl1")]

@@ -1,12 +1,14 @@
-[gd_resource type="Resource" script_class="BuildingResource" load_steps=3 format=3 uid="uid://f00gxaemldi2"]
+[gd_resource type="Resource" script_class="BuildingResource" load_steps=4 format=3 uid="uid://f00gxaemldi2"]
 
 [ext_resource type="PackedScene" uid="uid://cscf24wjdt2fq" path="res://scenes/building/Tower.tscn" id="1_6o44u"]
 [ext_resource type="Script" path="res://resources/building/BuildingResource.cs" id="1_u7ob0"]
+[ext_resource type="PackedScene" uid="uid://dq1e11mwu5wlq" path="res://scenes/building/sprite/TowerSprite2D.tscn" id="2_5bha8"]
 
 [resource]
 script = ExtResource("1_u7ob0")
-DisplayName = "Village"
+DisplayName = "Tower"
 BuildableRadius = 3
 ResourceCost = 4
 ResourceRadius = 0
 BuildingScene = ExtResource("1_6o44u")
+SpriteScene = ExtResource("2_5bha8")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cmh7avnc4fejs"]
 
-[ext_resource type="Texture2D" uid="uid://cx3arymhwyrk" path="res://assets/buildings/house_blue.png" id="1_3qrll"]
 [ext_resource type="PackedScene" uid="uid://gaufabbjupap" path="res://scenes/components/BuildingComponent.tscn" id="1_nnnuy"]
+[ext_resource type="PackedScene" uid="uid://b71gmungddmht" path="res://scenes/building/sprite/VillageSprite2D.tscn" id="2_tbbpm"]
 
 [node name="Village" type="Node2D"]
 y_sort_enabled = true
@@ -9,9 +9,4 @@ y_sort_enabled = true
 [node name="BuildingComponent" parent="." instance=ExtResource("1_nnnuy")]
 buildingResourcePath = "res://resources/building/village.tres"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-y_sort_enabled = true
-position = Vector2(32, 32)
-texture = ExtResource("1_3qrll")
-centered = false
-offset = Vector2(-64, -140)
+[node name="VillageSprite2D" parent="." instance=ExtResource("2_tbbpm")]
